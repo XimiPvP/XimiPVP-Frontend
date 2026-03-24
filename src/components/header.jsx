@@ -1,8 +1,9 @@
 import React from 'react';
 import '../style/header.css';
-import Logo from '../assets/logo.png';
 import { LogIn, UserPlus, LogOut, User } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+
+const logoUrl = 'https://api.ximi.lol/uploads/logo.png?v=1';
 
 function Head() {
     const navigate = useNavigate();
@@ -32,9 +33,7 @@ function Head() {
                     </>
                 )}
             </div>
-            <a href="https://ximipvp.eu/assets/logo.png" target="_blank" rel="noopener noreferrer">
-                <img src={Logo} alt="XimiPVP" draggable="false"/>
-            </a>
+            <img src={logoUrl} alt="XimiPVP" draggable="false"/>
         </div>
     );
 }
