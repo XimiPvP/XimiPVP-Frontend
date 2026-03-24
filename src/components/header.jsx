@@ -32,7 +32,9 @@ function Head() {
                     </>
                 )}
             </div>
-            <img src={Logo} alt="Logo" draggable="false"/>
+            <a href="https://ximipvp.eu/assets/logo.png" target="_blank" rel="noopener noreferrer">
+                <img src={Logo} alt="XimiPVP" draggable="false"/>
+            </a>
         </div>
     );
 }
